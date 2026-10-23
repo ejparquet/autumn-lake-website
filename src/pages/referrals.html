@@ -1,0 +1,91 @@
+<!-- {"title":"Referrals | Autumn Lake Healthcare Services","description":"Know someone who could use homemaker services? Send their information to Autumn Lake in Baton Rouge.","nav":""} -->
+<section class="page-head">
+  <div class="mx-auto grid max-w-page gap-12 px-5 pb-16 pt-10 md:px-8 md:pt-14 lg:grid-cols-12 lg:gap-10 lg:pb-24">
+    <div class="lg:col-span-5">
+      <div class="lg:sticky lg:top-28">
+        <h1 data-reveal class="text-[2.5rem] font-bold leading-[1.05] text-ink sm:text-5xl lg:text-[3.2rem]">Send a <span class="text-brand">referral.</span></h1>
+        <p data-reveal style="--d:.08s" class="mt-6 max-w-[40ch] text-lg text-ink-soft md:text-xl">Do you know someone who could use our homemaker services? Send us their information.</p>
+        <div data-reveal style="--d:.14s" class="elev-1 mt-10 rounded-[28px] border border-line bg-surface p-6">
+          <div class="flex gap-4">
+            <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun-soft text-brand"><i class="ph-bold ph-lock-simple text-xl" aria-hidden="true"></i></span>
+            <p class="text-ink-soft">Please don't include Social Security numbers or medical records here. We'll collect sensitive details by phone during intake.</p>
+          </div>
+        </div>
+        <p data-reveal class="mt-8 text-ink-soft">Questions? Call <a class="font-bold text-brand underline underline-offset-4" href="tel:+12252462740">(225) 246-2740</a>.</p>
+      </div>
+    </div>
+
+    <div data-reveal style="--d:.1s" class="elev-2 rounded-[28px] border border-line bg-surface p-6 md:p-10 lg:col-span-7">
+      <h2 class="text-2xl font-bold text-ink">Homemaker service referral</h2>
+      <form data-form data-endpoint="" class="mt-8 grid gap-8">
+        <fieldset class="grid gap-6">
+          <legend class="mb-6 flex items-center gap-3 text-lg font-bold text-ink"><i class="ph-bold ph-user text-xl text-brand" aria-hidden="true"></i>Person being referred</legend>
+          <div class="grid gap-6 sm:grid-cols-[2fr_1fr]">
+            <div class="field">
+              <label class="field-label" for="r-name">Name <span class="req">(required)</span></label>
+              <input class="input" id="r-name" name="client_name" required aria-describedby="r-name-error">
+              <p class="field-error" id="r-name-error" data-error-for="client_name" hidden></p>
+            </div>
+            <div class="field">
+              <label class="field-label" for="r-bday">Birthday</label>
+              <input class="input" id="r-bday" name="client_birthday" type="date">
+            </div>
+          </div>
+          <div class="grid gap-6 sm:grid-cols-[2fr_1fr]">
+            <div class="field">
+              <label class="field-label" for="r-address">Address</label>
+              <input class="input" id="r-address" name="client_address">
+            </div>
+            <div class="field">
+              <label class="field-label" for="r-zip">ZIP code</label>
+              <input class="input" id="r-zip" name="client_zip" inputmode="numeric" pattern="\d{5}(-\d{4})?" data-pattern-message="Enter a 5-digit ZIP code." aria-describedby="r-zip-error">
+              <p class="field-error" id="r-zip-error" data-error-for="client_zip" hidden></p>
+            </div>
+          </div>
+          <div class="field sm:max-w-[50%]">
+            <label class="field-label" for="r-phone">Phone <span class="req">(required)</span></label>
+            <input class="input" id="r-phone" name="client_phone" type="tel" required aria-describedby="r-phone-error">
+            <p class="field-error" id="r-phone-error" data-error-for="client_phone" hidden></p>
+          </div>
+        </fieldset>
+
+        <fieldset class="grid gap-6 border-t border-line pt-8">
+          <legend class="sr-only">Responsible party</legend>
+          <p class="flex items-center gap-3 text-lg font-bold text-ink" aria-hidden="true"><i class="ph-bold ph-users text-xl text-brand"></i>Responsible party</p>
+          <div class="field">
+            <label class="field-label" for="r-rp">Name</label>
+            <input class="input" id="r-rp" name="responsible_party" autocomplete="name" aria-describedby="r-rp-help">
+            <p class="field-help" id="r-rp-help">A family member, guardian or case manager we can contact.</p>
+          </div>
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="field">
+              <label class="field-label" for="r-rp-phone">Phone</label>
+              <input class="input" id="r-rp-phone" name="responsible_phone" type="tel" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label class="field-label" for="r-rp-email">Email</label>
+              <input class="input" id="r-rp-email" name="responsible_email" type="email" autocomplete="email" aria-describedby="r-rp-email-error">
+              <p class="field-error" id="r-rp-email-error" data-error-for="responsible_email" hidden></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="field border-t border-line pt-8">
+          <label class="field-label" for="r-comment">Comments</label>
+          <textarea class="input" id="r-comment" name="comment" rows="4"></textarea>
+        </div>
+
+        <div data-form-status class="notice" tabindex="-1" role="status" hidden>
+          <p class="font-bold">Online referrals are not connected yet.</p>
+          <p class="mt-1">Please call <a class="font-bold underline underline-offset-4" href="tel:+12252462740">(225) 246-2740</a> to make a referral.</p>
+        </div>
+        <div><button type="submit" class="btn btn-sun">Send referral <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></button></div>
+      </form>
+      <div data-form-success tabindex="-1" hidden class="py-10 text-center">
+        <span class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-sun text-on-sun"><i class="ph-bold ph-check text-3xl" aria-hidden="true"></i></span>
+        <h3 class="mt-5 text-2xl font-bold text-ink">Thanks for the referral!</h3>
+        <p class="mt-2 text-ink-soft">Our team will reach out soon.</p>
+      </div>
+    </div>
+  </div>
+</section>

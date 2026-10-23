@@ -1,0 +1,5 @@
+temporary screenshots/
+node_modules/
+.DS_Store
+# Unused photo showing another agency's logo
+brand_assets/caregiver.jpg

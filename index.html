@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Care in Baton Rouge | Autumn Lake Healthcare Services</title>
+  <meta name="description" content="Autumn Lake provides in-home personal care and Medicaid waiver services for seniors, adults and children with disabilities in Baton Rouge, Louisiana.">
+  <meta name="theme-color" content="#1e3e72">
+  <link rel="icon" href="/brand_assets/logo-mark.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="/brand_assets/hero-walk.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/assets/tailwind.config.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body class="grain">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] btn btn-sun">Skip to content</a>
+
+  <!-- Header (floating layer) -->
+  <header class="sticky top-0 z-50 backdrop-blur-xl" style="background: color-mix(in srgb, var(--bg) 82%, transparent);">
+    <div class="mx-auto flex h-[72px] max-w-page items-center justify-between gap-6 px-5 md:px-8">
+      <a href="/" class="flex items-center gap-3" aria-label="Autumn Lake Healthcare Services, home">
+        <picture>
+          <source srcset="/brand_assets/logo-mark-light.png" media="(prefers-color-scheme: dark)">
+          <img src="/brand_assets/logo-mark.png" alt="" width="303" height="347" class="h-11 w-auto">
+        </picture>
+        <span class="leading-none">
+          <span class="display block text-[1.35rem] font-bold text-brand">Autumn Lake</span>
+          <span class="mt-1 block text-[.7rem] font-bold uppercase tracking-[.16em] text-ink-soft">Healthcare Services</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden xl:block">
+        <ul class="flex items-center gap-6">
+          <li><a class="nav-link" href="/" aria-current="page">Home</a></li>
+          <li><a class="nav-link" href="/about-us/">About Us</a></li>
+          <li><a class="nav-link" href="/services-minimalist/">Services</a></li>
+          <li><a class="nav-link" href="/careers/">Careers</a></li>
+          <li><a class="nav-link" href="/wellness-resources/">Wellness Resources</a></li>
+          <li><a class="nav-link" href="/contact-us/">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="/set-an-appointment/" class="btn btn-sun hidden sm:inline-flex !min-h-[2.9rem] !px-5 !text-base">Set an appointment</a>
+        <button id="menuBtn" type="button" class="btn btn-ghost !min-h-[2.9rem] !px-4 xl:hidden" aria-expanded="false" aria-controls="menu">
+          <i class="ph-bold ph-list text-xl" aria-hidden="true"></i><span>Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="menu" data-open="false" class="absolute inset-x-0 top-full px-5 pb-5 xl:hidden">
+      <nav aria-label="Mobile" class="elev-2 mx-auto max-w-page rounded-3xl border border-line bg-surface p-3">
+        <ul class="grid gap-1">
+          <li><a class="flex min-h-[48px] items-center rounded-2xl px-4 font-bold hover:bg-surface-2 active:opacity-70 bg-sun-soft" href="/" aria-current="page">Home</a></li>
+          <li><a class="flex min-h-[48px] items-center rounded-2xl px-4 font-bold hover:bg-surface-2 active:opacity-70" href="/about-us/">About Us</a></li>
+          <li><a class="flex min-h-[48px] items-center rounded-2xl px-4 font-bold hover:bg-surface-2 active:opacity-70" href="/services-minimalist/">Services</a></li>
+          <li><a class="flex min-h-[48px] items-center rounded-2xl px-4 font-bold hover:bg-surface-2 active:opacity-70" href="/careers/">Careers</a></li>
+          <li><a class="flex min-h-[48px] items-center rounded-2xl px-4 font-bold hover:bg-surface-2 active:opacity-70" href="/wellness-resources/">Wellness Resources</a></li>
+          <li><a class="flex min-h-[48px] items-center rounded-2xl px-4 font-bold hover:bg-surface-2 active:opacity-70" href="/contact-us/">Contact Us</a></li>
+        </ul>
+        <a href="/set-an-appointment/" class="btn btn-sun mt-3 w-full sm:hidden">Set an appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero: full-bleed photo -->
+    <section class="hero-full on-navy relative isolate flex min-h-[calc(100svh-72px)] items-end overflow-hidden lg:items-center">
+      <div class="absolute inset-0 -z-10" aria-hidden="true">
+        <img src="/brand_assets/hero-walk.jpg" alt="" width="1920" height="1433" fetchpriority="high" class="hero-img">
+        <div class="absolute inset-0 bg-navy opacity-[.18] mix-blend-multiply"></div>
+        <div class="hero-scrim absolute inset-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0"></div>
+      </div>
+      <p class="sr-only">Photo: a caregiver walks arm in arm with an older woman using a cane on a tree-lined street.</p>
+
+      <div class="mx-auto w-full max-w-page px-5 pb-12 pt-40 md:px-8 lg:py-24">
+        <div class="max-w-[34rem]">
+          <h1 data-reveal class="text-[2.6rem] font-bold leading-[1.04] text-white sm:text-5xl lg:text-[3.6rem]">
+            Health care at home, <span class="text-sun">shaped around you.</span>
+          </h1>
+          <p data-reveal style="--d:.08s" class="mt-6 max-w-[34ch] text-lg leading-[1.7] text-white/90 md:text-xl">
+            In-home personal care for seniors and people with disabilities in Baton Rouge, planned together with you and your family.
+          </p>
+          <div data-reveal style="--d:.16s" class="mt-9 flex flex-wrap items-center gap-3">
+            <a href="/set-an-appointment/" class="btn btn-sun">Set an appointment <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></a>
+            <a href="tel:+12252462740" class="btn btn-light backdrop-blur-sm" style="background: rgb(255 255 255 / .06);"><i class="ph-bold ph-phone" aria-hidden="true"></i>(225) 246-2740</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / approach -->
+    <section aria-labelledby="about-title" class="pb-16 pt-12 md:pb-24 md:pt-16">
+      <div class="mx-auto grid max-w-page gap-12 px-5 md:px-8 lg:grid-cols-12 lg:gap-16">
+        <div class="lg:col-span-6" data-reveal>
+          <h2 id="about-title" class="text-3xl font-bold leading-[1.12] text-ink md:text-[2.6rem]">
+            Stronger communities start with care at home.
+          </h2>
+          <div class="mt-6 max-w-[60ch] space-y-5 text-ink-soft">
+            <p>Autumn Lake was created to build stronger communities through quality personal care services. We work to improve quality of life for our elderly and disabled neighbors by teaching skills that help clients live well at home and in the community.</p>
+            <p>Our experienced team builds a service plan alongside each client and their family, so everyone understands it, with the goal of reducing and preventing hospitalization.</p>
+          </div>
+          <a href="/about-us/" class="link-arrow mt-6 text-brand">About Autumn Lake <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="lg:col-span-6" data-reveal style="--d:.1s">
+          <div class="elev-1 rounded-[28px] border border-line bg-surface p-6 md:p-8">
+            <h3 class="text-xl font-bold text-ink">How we help</h3>
+            <ul class="mt-6 grid gap-x-6 gap-y-5 sm:grid-cols-2">
+              <li class="flex items-center gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun-soft text-brand"><i class="ph-bold ph-clipboard-text text-xl" aria-hidden="true"></i></span><span class="font-bold leading-snug">Assessments</span></li>
+              <li class="flex items-center gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun-soft text-brand"><i class="ph-bold ph-users-three text-xl" aria-hidden="true"></i></span><span class="font-bold leading-snug">Community support</span></li>
+              <li class="flex items-center gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun-soft text-brand"><i class="ph-bold ph-note-pencil text-xl" aria-hidden="true"></i></span><span class="font-bold leading-snug">Individualized plans of care</span></li>
+              <li class="flex items-center gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun-soft text-brand"><i class="ph-bold ph-hand-heart text-xl" aria-hidden="true"></i></span><span class="font-bold leading-snug">Individual interventions</span></li>
+              <li class="flex items-center gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun-soft text-brand"><i class="ph-bold ph-chalkboard-teacher text-xl" aria-hidden="true"></i></span><span class="font-bold leading-snug">Client Specific Training</span></li>
+              <li class="flex items-center gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun-soft text-brand"><i class="ph-bold ph-arrows-split text-xl" aria-hidden="true"></i></span><span class="font-bold leading-snug">Referrals to other agencies</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services bento -->
+    <section id="services" aria-labelledby="services-title" class="py-16 md:py-24" style="background: color-mix(in srgb, var(--surface-2) 55%, var(--bg));">
+      <div class="mx-auto max-w-page px-5 md:px-8">
+        <div data-reveal class="max-w-[46rem]">
+          <p class="text-sm font-bold uppercase tracking-[.14em] text-brand">Services we offer</p>
+          <h2 id="services-title" class="mt-3 text-3xl font-bold leading-[1.12] text-ink md:text-[2.6rem]">Medicaid waiver services for every stage of life.</h2>
+          <p class="mt-4 max-w-[60ch] text-ink-soft">Each service is matched to the individual needs of you and your loved one.</p>
+        </div>
+
+        <div class="mt-12 grid gap-5 lg:grid-cols-12 lg:grid-rows-2">
+          <!-- Children's Choice: large image cell -->
+          <a data-reveal href="/services-minimalist/#childrens-choice" class="lift zoom elev-2 group relative isolate flex min-h-[420px] flex-col justify-end overflow-hidden rounded-[28px] p-7 md:p-9 lg:col-span-7 lg:row-span-2 lg:min-h-[560px]">
+            <img src="/brand_assets/now-waiver.jpg" alt="A smiling young girl holds up hands covered in bright finger paint" class="absolute inset-0 -z-10 h-full w-full object-cover">
+            <div class="absolute inset-0 -z-10 bg-navy opacity-25 mix-blend-multiply" aria-hidden="true"></div>
+            <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/30 to-black/0" aria-hidden="true"></div>
+            <h3 class="text-3xl font-bold text-white md:text-4xl">Children's Choice Waiver</h3>
+            <p class="mt-3 max-w-[48ch] text-[1.05rem] text-white/90">Supplemental support for children with developmental disabilities who live at home with their families or with a foster family.</p>
+            <span class="link-arrow mt-4 text-sun">Learn more <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span>
+          </a>
+
+          <!-- NOW: sun tile -->
+          <a data-reveal style="--d:.08s" href="/services-minimalist/#now" class="lift elev-1 relative flex flex-col overflow-hidden rounded-[28px] bg-sun p-7 text-on-sun md:p-9 lg:col-span-5">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl" style="background: rgb(19 40 77 / .1);"><i class="ph-bold ph-house-line text-3xl" aria-hidden="true"></i></span>
+            <h3 class="mt-6 text-2xl font-bold md:text-[1.75rem]">New Opportunities Waiver</h3>
+            <p class="mt-3 max-w-[44ch]">An array of services that help people live as independently as possible.</p>
+            <span class="link-arrow mt-auto pt-4">Learn more <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span>
+          </a>
+
+          <!-- Community Choice: image + text -->
+          <a data-reveal style="--d:.16s" href="/services-minimalist/#community-choices" class="lift zoom elev-1 group grid overflow-hidden rounded-[28px] border border-line bg-surface sm:grid-cols-[1fr_1.1fr] lg:col-span-5">
+            <div class="relative min-h-[200px] overflow-hidden">
+              <img src="/brand_assets/children-choice.jpg" alt="A caregiver helps an older woman step safely onto her front porch" class="absolute inset-0 h-full w-full object-cover object-[40%_50%]">
+              <div class="absolute inset-0 bg-navy opacity-20 mix-blend-multiply" aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-40" aria-hidden="true"></div>
+            </div>
+            <div class="flex flex-col p-7">
+              <h3 class="text-2xl font-bold text-ink">Community Choices Waiver</h3>
+              <p class="mt-3 text-ink-soft">Serves seniors and adults with adult-onset disabilities as an alternative to nursing facility care.</p>
+              <span class="link-arrow mt-auto pt-4 text-brand">Learn more <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission (brand band) -->
+    <section aria-labelledby="mission-title" class="on-navy navy-atmos py-16 text-on-navy md:py-24">
+      <div class="mx-auto grid max-w-page items-center gap-12 px-5 md:px-8 lg:grid-cols-12 lg:gap-16">
+        <div data-reveal class="relative lg:col-span-5">
+          <div class="relative overflow-hidden rounded-[28px]" style="box-shadow: 0 30px 80px -30px rgb(2 8 24 / .6);">
+            <img src="/brand_assets/comforting-hands.jpg" alt="A caregiver gently holds the hand of an older client" width="1800" height="1200" class="aspect-[4/5] w-full object-cover object-[42%_50%]">
+            <div class="absolute inset-0 bg-navy opacity-25 mix-blend-multiply" aria-hidden="true"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-60" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="lg:col-span-7">
+          <div data-reveal>
+            <p class="text-sm font-bold uppercase tracking-[.14em] text-sun">Our mission</p>
+            <h2 id="mission-title" class="mt-3 text-3xl font-bold leading-[1.15] md:text-[2.5rem]">Quality care through Autumn Lake's tradition of care.</h2>
+            <p class="mt-4 max-w-[56ch] text-on-navy-soft">Every service we provide is guided by six commitments.</p>
+          </div>
+          <ul class="mt-10 grid gap-4 sm:grid-cols-2">
+            <li data-reveal style="--d:.04s" class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[.05] p-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun text-on-sun"><i class="ph-bold ph-shield-check text-xl" aria-hidden="true"></i></span><span class="text-lg font-bold">Preserve dignity</span></li>
+            <li data-reveal style="--d:.08s" class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[.05] p-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun text-on-sun"><i class="ph-bold ph-plant text-xl" aria-hidden="true"></i></span><span class="text-lg font-bold">Nurture the spirit</span></li>
+            <li data-reveal style="--d:.12s" class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[.05] p-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun text-on-sun"><i class="ph-bold ph-fingerprint text-xl" aria-hidden="true"></i></span><span class="text-lg font-bold">Celebrate individuality</span></li>
+            <li data-reveal style="--d:.16s" class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[.05] p-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun text-on-sun"><i class="ph-bold ph-signpost text-xl" aria-hidden="true"></i></span><span class="text-lg font-bold">Enable freedom of choice</span></li>
+            <li data-reveal style="--d:.20s" class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[.05] p-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun text-on-sun"><i class="ph-bold ph-person-simple-walk text-xl" aria-hidden="true"></i></span><span class="text-lg font-bold">Encourage independence</span></li>
+            <li data-reveal style="--d:.24s" class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[.05] p-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun text-on-sun"><i class="ph-bold ph-users text-xl" aria-hidden="true"></i></span><span class="text-lg font-bold">Involve family and friends</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get started -->
+    <section aria-labelledby="start-title" class="py-16 md:py-24">
+      <div class="mx-auto max-w-page px-5 md:px-8">
+        <div data-reveal class="mx-auto max-w-[40rem] text-center">
+          <h2 id="start-title" class="text-3xl font-bold leading-[1.12] text-ink md:text-[2.6rem]">Interested in our services?</h2>
+          <p class="mt-4 text-ink-soft">Let us help you find the right care for you or your loved ones.</p>
+        </div>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-2">
+          <a data-reveal href="/set-an-appointment/" class="lift elev-2 group relative flex flex-col overflow-hidden rounded-[28px] bg-sun p-8 text-on-sun md:p-10">
+            <i class="ph-bold ph-calendar-check text-[2.75rem]" aria-hidden="true"></i>
+            <h3 class="mt-8 text-3xl font-bold">Set an appointment</h3>
+            <p class="mt-3 max-w-[40ch] text-[1.075rem]">We would love to sit down with you and see how we can help.</p>
+            <span class="btn mt-8 self-start bg-[#13284d] text-white" style="background:#13284d;color:#fff">Book a time <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span>
+          </a>
+          <a data-reveal style="--d:.08s" href="/referrals/" class="lift elev-1 group relative flex flex-col overflow-hidden rounded-[28px] border border-line bg-surface p-8 md:p-10">
+            <i class="ph-bold ph-paper-plane-tilt text-[2.75rem] text-brand" aria-hidden="true"></i>
+            <h3 class="mt-8 text-3xl font-bold text-ink">Send your referrals</h3>
+            <p class="mt-3 max-w-[40ch] text-[1.075rem] text-ink-soft">Know someone who could use our services? Refer them to us.</p>
+            <span class="btn btn-ghost mt-8 self-start">Make a referral <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Careers + resources -->
+    <section aria-labelledby="careers-title" class="pb-16 md:pb-24">
+      <div class="mx-auto grid max-w-page gap-5 px-5 md:px-8 lg:grid-cols-12">
+        <div data-reveal class="on-navy navy-atmos elev-2 relative overflow-hidden rounded-[28px] p-8 text-on-navy md:p-12 lg:col-span-7">
+          <img src="/brand_assets/logo-mark.png" alt="" aria-hidden="true" class="pointer-events-none absolute -bottom-10 -right-6 w-56 opacity-[.12] md:w-72">
+          <h2 id="careers-title" class="relative text-3xl font-bold leading-[1.12] md:text-[2.5rem]">Better care starts with you.</h2>
+          <p class="relative mt-4 max-w-[46ch] text-on-navy-soft">We are hiring homemakers in the Baton Rouge area. Join a team that treats every client like family.</p>
+          <div class="relative mt-8 flex flex-wrap gap-3">
+            <a href="/careers/" class="btn btn-sun">See open positions <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div data-reveal style="--d:.08s" class="elev-1 flex flex-col rounded-[28px] border border-line bg-surface p-8 md:p-10 lg:col-span-5">
+          <h2 class="text-2xl font-bold text-ink">Need help?</h2>
+          <p class="mt-2 text-ink-soft">Trusted health information and support, including COVID-19 guidance.</p>
+          <ul class="mt-6 grid gap-3">
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.html" target="_blank" rel="noopener" class="lift flex items-center gap-4 rounded-2xl border border-line bg-bg p-4">
+                <i class="ph-bold ph-first-aid-kit text-2xl text-brand" aria-hidden="true"></i>
+                <span class="flex-1 font-bold leading-snug">Learn about COVID&#8209;19 <span class="block text-sm font-normal text-ink-soft">Centers for Disease Control</span></span>
+                <i class="ph-bold ph-arrow-up-right text-lg text-ink-soft" aria-hidden="true"></i><span class="sr-only">(opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nami.org/Support-Education/NAMI-HelpLine/COVID-19-Information-and-Resources/COVID-19-Resource-and-Information-Guide" target="_blank" rel="noopener" class="lift flex items-center gap-4 rounded-2xl border border-line bg-bg p-4">
+                <i class="ph-bold ph-heartbeat text-2xl text-brand" aria-hidden="true"></i>
+                <span class="flex-1 font-bold leading-snug">Mental health resource guide <span class="block text-sm font-normal text-ink-soft">National Alliance on Mental Illness</span></span>
+                <i class="ph-bold ph-arrow-up-right text-lg text-ink-soft" aria-hidden="true"></i><span class="sr-only">(opens in a new tab)</span>
+              </a>
+            </li>
+          </ul>
+          <a href="/wellness-resources/" class="link-arrow mt-4 text-brand">All wellness resources <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-line bg-surface">
+    <div class="mx-auto grid max-w-page gap-12 px-5 py-14 md:px-8 md:py-16 lg:grid-cols-12">
+      <div class="lg:col-span-4">
+        <a href="/" class="inline-flex items-center gap-3" aria-label="Autumn Lake Healthcare Services, home">
+          <picture>
+            <source srcset="/brand_assets/logo-mark-light.png" media="(prefers-color-scheme: dark)">
+            <img src="/brand_assets/logo-mark.png" alt="" class="h-12 w-auto">
+          </picture>
+          <span class="display text-2xl font-bold text-brand">Autumn Lake</span>
+        </a>
+        <p class="mt-4 max-w-[32ch] text-ink-soft">Embracing growth as we seek to provide individualized care.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="https://www.facebook.com/autumnlakellc" target="_blank" rel="noopener" aria-label="Autumn Lake on Facebook" class="lift grid h-12 w-12 place-items-center rounded-full border border-line text-ink hover:bg-surface-2"><i class="ph-bold ph-facebook-logo text-xl" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/autumnlakellc/" target="_blank" rel="noopener" aria-label="Autumn Lake on Instagram" class="lift grid h-12 w-12 place-items-center rounded-full border border-line text-ink hover:bg-surface-2"><i class="ph-bold ph-instagram-logo text-xl" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="grid gap-10 sm:grid-cols-2 lg:col-span-8 lg:grid-cols-[1.35fr_1fr_.8fr]">
+        <div>
+          <h2 class="text-base font-bold text-ink">Contact</h2>
+          <ul class="mt-4 space-y-3 text-ink-soft">
+            <li><a href="tel:+12252462740" class="inline-flex min-h-[44px] items-center gap-3 font-bold text-ink hover:underline active:opacity-70"><i class="ph-bold ph-phone text-lg text-brand" aria-hidden="true"></i>(225) 246-2740</a></li>
+            <li><a href="mailto:info@autumnlakellc.com" class="inline-flex min-h-[44px] items-center gap-3 hover:underline active:opacity-70"><i class="ph-bold ph-envelope-simple text-lg text-brand" aria-hidden="true"></i><span>info<wbr>@autumnlakellc.com</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-base font-bold text-ink">Main office</h2>
+          <address class="mt-4 not-italic text-ink-soft">5516 Superior Dr. Ste. A<br>Baton Rouge, LA 70816</address>
+          <a href="https://maps.google.com/?q=5516+Superior+Dr+Ste+A,+Baton+Rouge,+LA+70816" target="_blank" rel="noopener" class="link-arrow mt-1 text-brand">Get directions <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div>
+          <h2 class="text-base font-bold text-ink">Company</h2>
+          <ul class="mt-3 grid text-ink-soft">
+            <li><a href="/about-us/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">About Us</a></li>
+            <li><a href="/services-minimalist/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">Services</a></li>
+            <li><a href="/housing/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">Housing</a></li>
+            <li><a href="/careers/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">Careers</a></li>
+            <li><a href="/referrals/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">Referrals</a></li>
+            <li><a href="/client-satisfaction-survey/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">Client survey</a></li>
+            <li><a href="/contact-us/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-line">
+      <p class="mx-auto max-w-page px-5 py-6 text-sm text-ink-soft md:px-8">&copy; <span id="year">2026</span> Autumn Lake LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>

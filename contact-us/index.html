@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Autumn Lake Healthcare Services</title>
+  <meta name="description" content="Call (225) 246-2740, send a message, or visit our Baton Rouge office at 5516 Superior Dr. Ste. A.">
+  <meta name="theme-color" content="#1e3e72">
+  <link rel="icon" href="/brand_assets/logo-mark.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/assets/tailwind.config.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body class="grain">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] btn btn-sun">Skip to content</a>
+
+  <!-- Header (floating layer) -->
+  <header class="sticky top-0 z-50 backdrop-blur-xl" style="background: color-mix(in srgb, var(--bg) 82%, transparent);">
+    <div class="mx-auto flex h-[72px] max-w-page items-center justify-between gap-6 px-5 md:px-8">
+      <a href="/" class="flex items-center gap-3" aria-label="Autumn Lake Healthcare Services, home">
+        <picture>
+          <source srcset="/brand_assets/logo-mark-light.png" media="(prefers-color-scheme: dark)">
+          <img src="/brand_assets/logo-mark.png" alt="" width="303" height="347" class="h-11 w-auto">
+        </picture>
+        <span class="leading-none">
+          <span class="display block text-[1.35rem] font-bold text-brand">Autumn Lake</span>
+          <span class="mt-1 block text-[.7rem] font-bold uppercase tracking-[.16em] text-ink-soft">Healthcare Services</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden xl:block">
+        <ul class="flex items-center gap-6">
+          <li><a class="nav-link" href="/">Home</a></li>
+          <li><a class="nav-link" href="/about-us/">About Us</a></li>
+          <li><a class="nav-link" href="/services-minimalist/">Services</a></li>
+          <li><a class="nav-link" href="/careers/">Careers</a></li>
+          <li><a class="nav-link" href="/wellness-resources/">Wellness Resources</a></li>
+          <li><a class="nav-link" href="/contact-us/" aria-current="page">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="/set-an-appointment/" class="btn btn-sun hidden sm:inline-flex !min-h-[2.9rem] !px-5 !text-base">Set an appointment</a>
+        <button id="menuBtn" type="button" class="btn btn-ghost !min-h-[2.9rem] !px-4 xl:hidden" aria-expanded="false" aria-controls="menu">
+          <i class="ph-bold ph-list text-xl" aria-hidden="true"></i><span>Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="menu" data-open="false" class="absolute inset-x-0 top-full px-5 pb-5 xl:hidden">
+      <nav aria-label="Mobile" class="elev-2 mx-auto max-w-page rounded-3xl border border-line bg-surface p-3">
+        <ul class="grid gap-1">
+          <li><a class="flex min-h-[48px] items-center rounded-2xl px-4 font-bold hover:bg-surface-2 active:opacity-70" href="/">Home</a></li>
+          <li><a class="flex min-h-[48px] items-center rounded-2xl px-4 font-bold hover:bg-surface-2 active:opacity-70" href="/about-us/">About Us</a></li>
+          <li><a class="flex min-h-[48px] items-center rounded-2xl px-4 font-bold hover:bg-surface-2 active:opacity-70" href="/services-minimalist/">Services</a></li>
+          <li><a class="flex min-h-[48px] items-center rounded-2xl px-4 font-bold hover:bg-surface-2 active:opacity-70" href="/careers/">Careers</a></li>
+          <li><a class="flex min-h-[48px] items-center rounded-2xl px-4 font-bold hover:bg-surface-2 active:opacity-70" href="/wellness-resources/">Wellness Resources</a></li>
+          <li><a class="flex min-h-[48px] items-center rounded-2xl px-4 font-bold hover:bg-surface-2 active:opacity-70 bg-sun-soft" href="/contact-us/" aria-current="page">Contact Us</a></li>
+        </ul>
+        <a href="/set-an-appointment/" class="btn btn-sun mt-3 w-full sm:hidden">Set an appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Page header -->
+    <section class="page-head">
+      <div class="mx-auto max-w-page px-5 pb-12 pt-10 md:px-8 md:pt-14 lg:pb-16">
+        <h1 data-reveal class="max-w-[16ch] text-[2.5rem] font-bold leading-[1.05] text-ink sm:text-5xl lg:text-[3.4rem]">We're happy <span class="text-brand">to help.</span></h1>
+        <p data-reveal style="--d:.08s" class="mt-6 max-w-[46ch] text-lg text-ink-soft md:text-xl">If you have questions or want more information, our advisors will be glad to help.</p>
+      </div>
+    </section>
+
+    <section aria-label="Contact options" class="pb-16 md:pb-24">
+      <div class="mx-auto grid max-w-page gap-5 px-5 md:px-8 lg:grid-cols-12">
+        <!-- Direct contact -->
+        <div class="grid gap-5 lg:col-span-5">
+          <a data-reveal href="tel:+12252462740" class="lift elev-2 flex flex-col rounded-[28px] bg-sun p-8 text-on-sun">
+            <i class="ph-bold ph-phone-call text-[2.5rem]" aria-hidden="true"></i>
+            <span class="mt-6 font-bold">For all general inquiries, call</span>
+            <span class="display mt-1 text-3xl font-bold md:text-4xl">(225) 246-2740</span>
+          </a>
+          <div data-reveal style="--d:.06s" class="elev-1 overflow-hidden rounded-[28px] border border-line bg-surface">
+            <div class="relative">
+              <img src="/brand_assets/office.jpg" alt="The Autumn Lake office building on Superior Drive" width="1800" height="1350" class="aspect-[16/9] w-full object-cover">
+              <div class="absolute inset-0 bg-navy opacity-[.12] mix-blend-multiply" aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-30" aria-hidden="true"></div>
+            </div>
+            <div class="p-7">
+              <h2 class="text-xl font-bold text-ink">Visit our office</h2>
+              <p class="mt-2 text-ink-soft">We would be happy to discuss your needs in person.</p>
+              <address class="mt-4 not-italic font-bold text-ink">5516 Superior Dr. Ste. A<br>Baton Rouge, Louisiana 70816</address>
+              <div class="mt-4 flex flex-wrap gap-x-6">
+                <a href="https://maps.google.com/?q=5516+Superior+Dr+Ste+A,+Baton+Rouge,+LA+70816" target="_blank" rel="noopener" class="link-arrow text-brand">Get directions <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></a>
+                <a href="mailto:info@autumnlakellc.com" class="link-arrow text-brand">Email us <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div data-reveal style="--d:.1s" class="elev-2 rounded-[28px] border border-line bg-surface p-6 md:p-10 lg:col-span-7">
+          <h2 class="text-2xl font-bold text-ink md:text-3xl">Send us a message</h2>
+          <p class="mt-2 text-ink-soft">We'll reply by email.</p>
+          <form data-form data-endpoint="" class="mt-8 grid gap-6">
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div class="field">
+                <label class="field-label" for="c-name">Name <span class="req">(required)</span></label>
+                <input class="input" id="c-name" name="name" autocomplete="name" required aria-describedby="c-name-error">
+                <p class="field-error" id="c-name-error" data-error-for="name" hidden></p>
+              </div>
+              <div class="field">
+                <label class="field-label" for="c-email">Email <span class="req">(required)</span></label>
+                <input class="input" id="c-email" name="email" type="email" autocomplete="email" required aria-describedby="c-email-error">
+                <p class="field-error" id="c-email-error" data-error-for="email" hidden></p>
+              </div>
+            </div>
+            <div class="field">
+              <label class="field-label" for="c-subject">Subject</label>
+              <input class="input" id="c-subject" name="subject">
+            </div>
+            <div class="field">
+              <label class="field-label" for="c-message">Message <span class="req">(required)</span></label>
+              <textarea class="input" id="c-message" name="message" rows="6" required aria-describedby="c-message-error"></textarea>
+              <p class="field-error" id="c-message-error" data-error-for="message" hidden></p>
+            </div>
+
+            <div data-form-status class="notice" tabindex="-1" role="status" hidden>
+              <p class="font-bold">Online messages are not connected yet.</p>
+              <p class="mt-1">Please call <a class="font-bold underline underline-offset-4" href="tel:+12252462740">(225) 246-2740</a> or email <a class="font-bold underline underline-offset-4" href="mailto:info@autumnlakellc.com">info@autumnlakellc.com</a>.</p>
+            </div>
+            <div><button type="submit" class="btn btn-sun">Send message <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></button></div>
+          </form>
+          <div data-form-success tabindex="-1" hidden class="py-10 text-center">
+            <span class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-sun text-on-sun"><i class="ph-bold ph-check text-3xl" aria-hidden="true"></i></span>
+            <h3 class="mt-5 text-2xl font-bold text-ink">Thanks for submitting!</h3>
+            <p class="mt-2 text-ink-soft">We'll get back to you soon.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join -->
+    <section aria-labelledby="join-title" class="pb-16 md:pb-24">
+      <div class="mx-auto max-w-page px-5 md:px-8">
+        <div data-reveal class="on-navy navy-atmos elev-2 relative overflow-hidden rounded-[28px] p-8 text-on-navy md:flex md:items-center md:justify-between md:gap-10 md:p-12">
+          <div>
+            <h2 id="join-title" class="text-3xl font-bold leading-[1.12] md:text-[2.2rem]">Join our team.</h2>
+            <p class="mt-3 max-w-[48ch] text-on-navy-soft">We are always looking for dedicated people to join our home health care staff.</p>
+          </div>
+          <a href="/careers/" class="btn btn-sun mt-8 shrink-0 md:mt-0">See open positions <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-line bg-surface">
+    <div class="mx-auto grid max-w-page gap-12 px-5 py-14 md:px-8 md:py-16 lg:grid-cols-12">
+      <div class="lg:col-span-4">
+        <a href="/" class="inline-flex items-center gap-3" aria-label="Autumn Lake Healthcare Services, home">
+          <picture>
+            <source srcset="/brand_assets/logo-mark-light.png" media="(prefers-color-scheme: dark)">
+            <img src="/brand_assets/logo-mark.png" alt="" class="h-12 w-auto">
+          </picture>
+          <span class="display text-2xl font-bold text-brand">Autumn Lake</span>
+        </a>
+        <p class="mt-4 max-w-[32ch] text-ink-soft">Embracing growth as we seek to provide individualized care.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="https://www.facebook.com/autumnlakellc" target="_blank" rel="noopener" aria-label="Autumn Lake on Facebook" class="lift grid h-12 w-12 place-items-center rounded-full border border-line text-ink hover:bg-surface-2"><i class="ph-bold ph-facebook-logo text-xl" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/autumnlakellc/" target="_blank" rel="noopener" aria-label="Autumn Lake on Instagram" class="lift grid h-12 w-12 place-items-center rounded-full border border-line text-ink hover:bg-surface-2"><i class="ph-bold ph-instagram-logo text-xl" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="grid gap-10 sm:grid-cols-2 lg:col-span-8 lg:grid-cols-[1.35fr_1fr_.8fr]">
+        <div>
+          <h2 class="text-base font-bold text-ink">Contact</h2>
+          <ul class="mt-4 space-y-3 text-ink-soft">
+            <li><a href="tel:+12252462740" class="inline-flex min-h-[44px] items-center gap-3 font-bold text-ink hover:underline active:opacity-70"><i class="ph-bold ph-phone text-lg text-brand" aria-hidden="true"></i>(225) 246-2740</a></li>
+            <li><a href="mailto:info@autumnlakellc.com" class="inline-flex min-h-[44px] items-center gap-3 hover:underline active:opacity-70"><i class="ph-bold ph-envelope-simple text-lg text-brand" aria-hidden="true"></i><span>info<wbr>@autumnlakellc.com</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-base font-bold text-ink">Main office</h2>
+          <address class="mt-4 not-italic text-ink-soft">5516 Superior Dr. Ste. A<br>Baton Rouge, LA 70816</address>
+          <a href="https://maps.google.com/?q=5516+Superior+Dr+Ste+A,+Baton+Rouge,+LA+70816" target="_blank" rel="noopener" class="link-arrow mt-1 text-brand">Get directions <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div>
+          <h2 class="text-base font-bold text-ink">Company</h2>
+          <ul class="mt-3 grid text-ink-soft">
+            <li><a href="/about-us/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">About Us</a></li>
+            <li><a href="/services-minimalist/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">Services</a></li>
+            <li><a href="/housing/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">Housing</a></li>
+            <li><a href="/careers/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">Careers</a></li>
+            <li><a href="/referrals/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">Referrals</a></li>
+            <li><a href="/client-satisfaction-survey/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">Client survey</a></li>
+            <li><a href="/contact-us/" class="inline-flex min-h-[40px] items-center hover:text-ink hover:underline active:opacity-70">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-line">
+      <p class="mx-auto max-w-page px-5 py-6 text-sm text-ink-soft md:px-8">&copy; <span id="year">2026</span> Autumn Lake LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>

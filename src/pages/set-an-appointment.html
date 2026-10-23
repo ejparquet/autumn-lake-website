@@ -1,0 +1,89 @@
+<!-- {"title":"Set an Appointment | Autumn Lake Healthcare Services","description":"Schedule a homemaker service assessment with Autumn Lake in Baton Rouge.","nav":""} -->
+<section class="page-head">
+  <div class="mx-auto grid max-w-page gap-12 px-5 pb-16 pt-10 md:px-8 md:pt-14 lg:grid-cols-12 lg:gap-10 lg:pb-24">
+    <div class="lg:col-span-5">
+      <div class="lg:sticky lg:top-28">
+        <h1 data-reveal class="text-[2.5rem] font-bold leading-[1.05] text-ink sm:text-5xl lg:text-[3.2rem]">Set an <span class="text-brand">appointment.</span></h1>
+        <p data-reveal style="--d:.08s" class="mt-6 max-w-[40ch] text-lg text-ink-soft md:text-xl">Schedule a homemaker service assessment. We'll sit down with you and see how we can help.</p>
+
+        <ol data-reveal style="--d:.14s" class="mt-10 grid gap-5">
+          <li class="flex gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun text-on-sun"><i class="ph-bold ph-note-pencil text-xl" aria-hidden="true"></i></span><span><span class="block font-bold text-ink">Tell us about your needs</span><span class="text-ink-soft">Fill out the form with your preferred date and time.</span></span></li>
+          <li class="flex gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun text-on-sun"><i class="ph-bold ph-phone-call text-xl" aria-hidden="true"></i></span><span><span class="block font-bold text-ink">We reach out</span><span class="text-ink-soft">By phone, text or email, whichever you prefer.</span></span></li>
+          <li class="flex gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sun text-on-sun"><i class="ph-bold ph-house-line text-xl" aria-hidden="true"></i></span><span><span class="block font-bold text-ink">In-home assessment</span><span class="text-ink-soft">Our Intake Supervisor visits to build your care plan.</span></span></li>
+        </ol>
+
+        <p data-reveal class="mt-10 text-ink-soft">Prefer to talk now? Call <a class="font-bold text-brand underline underline-offset-4" href="tel:+12252462740">(225) 246-2740</a>.</p>
+      </div>
+    </div>
+
+    <div data-reveal style="--d:.1s" class="elev-2 rounded-[28px] border border-line bg-surface p-6 md:p-10 lg:col-span-7">
+      <h2 class="text-2xl font-bold text-ink">Homemaker service assessment</h2>
+      <form data-form data-endpoint="" class="mt-8 grid gap-6">
+        <div class="field">
+          <label class="field-label" for="a-name">Name <span class="req">(required)</span></label>
+          <input class="input" id="a-name" name="name" autocomplete="name" required aria-describedby="a-name-error">
+          <p class="field-error" id="a-name-error" data-error-for="name" hidden></p>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2">
+          <div class="field">
+            <label class="field-label" for="a-phone">Phone <span class="req">(required)</span></label>
+            <input class="input" id="a-phone" name="phone" type="tel" autocomplete="tel" required aria-describedby="a-phone-error">
+            <p class="field-error" id="a-phone-error" data-error-for="phone" hidden></p>
+          </div>
+          <div class="field">
+            <label class="field-label" for="a-email">Email</label>
+            <input class="input" id="a-email" name="email" type="email" autocomplete="email" aria-describedby="a-email-error">
+            <p class="field-error" id="a-email-error" data-error-for="email" hidden></p>
+          </div>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-[2fr_1fr]">
+          <div class="field">
+            <label class="field-label" for="a-address">Address</label>
+            <input class="input" id="a-address" name="address" autocomplete="street-address">
+          </div>
+          <div class="field">
+            <label class="field-label" for="a-zip">ZIP code</label>
+            <input class="input" id="a-zip" name="zip" inputmode="numeric" autocomplete="postal-code" pattern="\d{5}(-\d{4})?" data-pattern-message="Enter a 5-digit ZIP code." aria-describedby="a-zip-error">
+            <p class="field-error" id="a-zip-error" data-error-for="zip" hidden></p>
+          </div>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2">
+          <div class="field">
+            <label class="field-label" for="a-date">Preferred date</label>
+            <input class="input" id="a-date" name="preferred_date" type="date">
+          </div>
+          <div class="field">
+            <label class="field-label" for="a-time">Best time to call <span class="req">(required)</span></label>
+            <input class="input" id="a-time" name="best_time" type="time" required aria-describedby="a-time-error">
+            <p class="field-error" id="a-time-error" data-error-for="best_time" hidden></p>
+          </div>
+        </div>
+        <fieldset class="field" aria-describedby="a-contact-error">
+          <legend class="field-label mb-2">How would you like to be contacted? <span class="req">(required)</span></legend>
+          <div class="flex flex-wrap gap-3">
+            <label class="choice"><input type="radio" name="contact_method" value="Phone" required><span><i class="ph-bold ph-phone" aria-hidden="true"></i>Phone</span></label>
+            <label class="choice"><input type="radio" name="contact_method" value="Text"><span><i class="ph-bold ph-chat-text" aria-hidden="true"></i>Text</span></label>
+            <label class="choice"><input type="radio" name="contact_method" value="Email"><span><i class="ph-bold ph-envelope-simple" aria-hidden="true"></i>Email</span></label>
+          </div>
+          <p class="field-error mt-1" id="a-contact-error" data-error-for="contact_method" hidden></p>
+        </fieldset>
+        <div class="field">
+          <label class="field-label" for="a-comment">Comments</label>
+          <textarea class="input" id="a-comment" name="comment" rows="4" aria-describedby="a-comment-help"></textarea>
+          <p class="field-help" id="a-comment-help">Anything that helps us prepare, like the type of care you're looking for.</p>
+        </div>
+
+        <div data-form-status class="notice" tabindex="-1" role="status" hidden>
+          <p class="font-bold">Online scheduling is not connected yet.</p>
+          <p class="mt-1">Please call <a class="font-bold underline underline-offset-4" href="tel:+12252462740">(225) 246-2740</a> to set your appointment.</p>
+        </div>
+        <div><button type="submit" class="btn btn-sun">Request appointment <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></button></div>
+      </form>
+      <div data-form-success tabindex="-1" hidden class="py-10 text-center">
+        <span class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-sun text-on-sun"><i class="ph-bold ph-check text-3xl" aria-hidden="true"></i></span>
+        <h3 class="mt-5 text-2xl font-bold text-ink">Thanks for submitting!</h3>
+        <p class="mt-2 text-ink-soft">We'll contact you to confirm your appointment.</p>
+      </div>
+    </div>
+  </div>
+</section>
