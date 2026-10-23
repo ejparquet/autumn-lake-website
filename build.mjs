@@ -41,7 +41,11 @@ for (const file of (await readdir(join(root, 'src/pages'))).filter((f) => f.ends
 
   const slug = file.replace(/\.html$/, '');
   const outDir = slug === 'home' ? root : join(root, slug);
+  // Rewrite root-relative URLs ("/careers/") to page-relative ones ("../careers/")
+  // so the site works at any base path, e.g. GitHub Pages project sites.
+  const up = slug === 'home' ? '' : '../';
+  const portable = html.replace(/(href|src|srcset)="\/(?!\/)([^"]*)"/g, (_, attr, rest) => `${attr}="${up + rest || './'}"`);
   await mkdir(outDir, { recursive: true });
-  await writeFile(join(outDir, 'index.html'), html);
+  await writeFile(join(outDir, 'index.html'), portable);
   console.log(`built ${slug === 'home' ? '/' : `/${slug}/`}`);
 }
